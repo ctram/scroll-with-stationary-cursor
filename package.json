@@ -1,41 +1,56 @@
 {
     "name": "scroll-with-stationary-cursor",
     "displayName": "Scroll With Stationary Cursor",
-    "description": "Scroll up an down page while the cursor stays in place relatively.",
-    "version": "0.0.1",
+    "description": "Move the cursor up and down, while scrolling one line in the same direction so that the cursor maintains its position within the editor",
+    "version": "0.1.0",
     "publisher": "chris",
     "engines": {
         "vscode": "^1.18.0"
+    },
+    "homepage": "https://github.com/ctram/scroll-with-stationary-cursor",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ctram/scroll-with-stationary-cursor.git"
     },
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.awesomeScrollUp",
-        "onCommand:extension.awesomeScrollDown"
+        "onCommand:extension.scrollWithCursorUp",
+        "onCommand:extension.scrollWithCursorDown"
+    ],
+    "keywords": [
+        "shortcuts",
+        "keybindings",
+        "scroll",
+        "cursor"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.awesomeScrollUp",
-                "title": "Awesome Scroll Up"
+                "command": "extension.scrollWithCursorUp",
+                "title": "Scroll up with cursor",
+                "when": "editorTextFocus"
             },
             {
-                "command": "extension.awesomeScrollDown",
-                "title": "Awesome Scroll Down"
+                "command": "extension.scrollWithCursorDown",
+                "title": "Scroll down with cursor",
+                "when": "editorTextFocus"
             }
         ],
         "keybindings": [
             {
                 "key": "ctrl+alt+cmd+up",
-                "command": "extension.awesomeScrollUp",
-                "title": "Awesome Scroll Up"
+                "command": "extension.scrollWithCursorUp",
+                "when": "editorTextFocus",
+                "title": "Scroll up with cursor"
             },
             {
                 "key": "ctrl+alt+cmd+down",
-                "command": "extension.awesomeScrollDown",
-                "title": "Awesome Scroll Down"
+                "command": "extension.scrollWithCursorDown",
+                "when": "editorTextFocus",
+                "title": "Scroll down with cursor"
             }
             
         ]
@@ -45,7 +60,6 @@
         "test": "node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
         "vscode": "^1.1.6",
         "eslint": "^4.6.1",
         "@types/node": "^7.0.43",

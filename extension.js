@@ -8,11 +8,11 @@ function activate(context) {
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
-    let disposable1 = vscode.commands.registerCommand('extension.awesomeScrollUp', function () {
+    let disposable1 = vscode.commands.registerCommand('extension.scrollWithCursorUp', function () {
     vscode.commands.executeCommand("cursorUp");
         vscode.commands.executeCommand("scrollLineUp");
     });
-    let disposable2 = vscode.commands.registerCommand('extension.awesomeScrollDown', function () {
+    let disposable2 = vscode.commands.registerCommand('extension.scrollWithCursorDown', function () {
     vscode.commands.executeCommand("cursorDown");
         vscode.commands.executeCommand("scrollLineDown");
     });
