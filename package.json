@@ -25,6 +25,19 @@
                 "command": "extension.awesomeScrollDown",
                 "title": "Awesome Scroll Down"
             }
+        ],
+        "keybindings": [
+            {
+                "key": "ctrl+alt+cmd+up",
+                "command": "extension.awesomeScrollUp",
+                "title": "Awesome Scroll Up"
+            },
+            {
+                "key": "ctrl+alt+cmd+down",
+                "command": "extension.awesomeScrollDown",
+                "title": "Awesome Scroll Down"
+            }
+            
         ]
     },
     "scripts": {
