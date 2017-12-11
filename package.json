@@ -3,7 +3,7 @@
     "displayName": "Scroll With Stationary Cursor",
     "description": "Move the cursor up and down, while scrolling one line in the same direction so that the cursor maintains its position within the editor",
     "version": "0.1.0",
-    "publisher": "chris",
+    "publisher": "stlr",
     "engines": {
         "vscode": "^1.18.0"
     },
