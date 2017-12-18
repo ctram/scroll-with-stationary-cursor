@@ -19,3 +19,17 @@ Adds ability to scroll in sync with the cursor moment. For example, pressing the
 |Move cursor down one line|`ctrl + alt + cmd + down`|
 |Move cursor up one line|`ctrl + alt + cmd + up`|
 
+**Linux**
+
+|Command|Keybinding|
+|-|-|
+|Move cursor down one line|`ctrl + alt + meta + down`|
+|Move cursor up one line|`ctrl + alt + meta + up`|
+
+**Win**
+
+|Command|Keybinding|
+|-|-|
+|Move cursor down one line|`ctrl + alt + win + down`|
+|Move cursor up one line|`ctrl + alt + win + up`|
+
