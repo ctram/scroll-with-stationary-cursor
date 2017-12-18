@@ -2,7 +2,7 @@
     "name": "scroll-with-stationary-cursor",
     "displayName": "Scroll With Stationary Cursor",
     "description": "Move the cursor up and down, while scrolling one line in the same direction so that the cursor maintains its position within the editor",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "stlr",
     "engines": {
         "vscode": "^1.18.0"
@@ -20,8 +20,6 @@
         "onCommand:extension.scrollWithCursorDown"
     ],
     "keywords": [
-        "shortcuts",
-        "keybindings",
         "scroll",
         "cursor"
     ],
@@ -51,8 +49,31 @@
                 "command": "extension.scrollWithCursorDown",
                 "when": "editorTextFocus",
                 "title": "Scroll down with cursor"
+            },
+            {
+                "key": "ctrl+alt+win+up",
+                "command": "extension.scrollWithCursorUp",
+                "when": "editorTextFocus",
+                "title": "Scroll up with cursor"
+            },
+            {
+                "key": "ctrl+alt+win+down",
+                "command": "extension.scrollWithCursorDown",
+                "when": "editorTextFocus",
+                "title": "Scroll down with cursor"
+            },
+            {
+                "key": "ctrl+alt+meta+up",
+                "command": "extension.scrollWithCursorUp",
+                "when": "editorTextFocus",
+                "title": "Scroll up with cursor"
+            },
+            {
+                "key": "ctrl+alt+meta+down",
+                "command": "extension.scrollWithCursorDown",
+                "when": "editorTextFocus",
+                "title": "Scroll down with cursor"
             }
-            
         ]
     },
     "scripts": {
